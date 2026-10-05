@@ -158,12 +158,17 @@ html { -webkit-tap-highlight-color: transparent; }
   border-radius: 2px;
   border: 1px solid rgba(243, 242, 237, 0.10);
 }
-.work-preview.biz  { background: linear-gradient(135deg, #12503F, #0F110F); }
-.work-preview.eco  { background: linear-gradient(135deg, #1a1a1a, #0B3B33); }
-.work-preview.port { background: linear-gradient(135deg, #101312, #163229); }
-.work-preview.land { background: linear-gradient(135deg, #0d1a16, #1c1c1c); }
-.work-preview.cust { background: linear-gradient(135deg, #0F110F, #123f32); }
-.work-preview.biz2 { background: linear-gradient(135deg, #14201c, #0F110F); }
+.work-preview.biz  { background: linear-gradient(135deg, #12503F, #0F110F); background-image: url(image/prachi.jpeg); background-position: center; background-size: cover; }
+.work-preview.eco  { background: linear-gradient(135deg, #1a1a1a, #0B3B33); background-image: url(image/Screenshot\ 2026-10-05\ at\ 12.55.07\ PM.png); background-position: center; background-size: cover; }
+.work-preview.port { background: linear-gradient(135deg, #101312, #163229); background-image: url(image/mera\ sai.png); background-position: center; background-size: cover;}
+.work-preview.land { background: linear-gradient(135deg, #0d1a16, #1c1c1c); background-image: url(image/clinic.png); background-position: center; background-size: cover; }
+.work-preview.land2 { background: linear-gradient(135deg, #0d1a16, #1c1c1c); background-image: url(image/hotel.png); background-position: center; background-size: cover; }
+.work-preview.cust { background: linear-gradient(135deg, #0F110F, #123f32); background-image: url(image/healthtech.png); background-position: center; background-size: cover; }
+.work-preview.cust2 { background: linear-gradient(135deg, #0F110F, #123f32); background-image: url(image/aacadamy.png); background-position: center; background-size: cover; }
+.work-preview.cust3 { background: linear-gradient(135deg, #0F110F, #123f32); background-image: url(image/shivla.png); background-position: center; background-size: cover; }
+.work-preview.biz2 { background: linear-gradient(135deg, #14201c, #0F110F); background-image: url(image/Global\ care.png); background-position: center; background-size: cover; }
+.work-preview.biz3 { background: linear-gradient(135deg, #14201c, #0F110F); background-image: url(image/rahul.png); background-position: center; background-size: cover; }
+.work-preview.biz4 { background: linear-gradient(135deg, #14201c, #0F110F); background-image: url(image/Kingston.png); background-position: center; background-size: cover; }
 .work-meta { padding-top: 16px; }
 .work-meta span { font-family: 'Space Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #21D99A; }
 .work-meta h3 { font-family: 'Fraunces', serif; font-size: 20px; margin-top: 6px; }
