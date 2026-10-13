@@ -3,20 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WebMakingStudio | Premium Website Development Agency</title>
+<title>WebMakingStudio | Website Design &amp; Development Services</title>
 <meta name="description" content="WebMakingStudio builds responsive business websites, e-commerce stores, landing pages and custom web applications for businesses and startups.">
-
-<meta property="og:title" content="Web Development Services for Businesses WebMakingStudio">
-<meta property="og:description" content="WebMakingStudio builds responsive business websites, e-commerce stores, landing pages and custom web applications for businesses and startups.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#070706">
+<link rel="canonical" href="https://web-making-studio.vercel.app/">
+<meta property="og:title" content="WebMakingStudio | Website Design &amp; Development Services">
+<meta property="og:description" content="Responsive business websites, e-commerce stores, landing pages and custom web applications, built around your project.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="public/img/logore.png">
+<meta property="og:url" content="https://web-making-studio.vercel.app/">
+<meta property="og:site_name" content="WebMakingStudio">
+<meta property="og:image" content="https://web-making-studio.vercel.app/image/logo.jpg">
+<meta property="og:image:alt" content="WebMakingStudio logo">
 <meta name="google-site-verification" content="KtVe4CPOt8wHjGEZ50F_kCTaHjfpE3bSHl1jqxKVtr4" />
 
-<link rel="icon" href="public/img/logore.png" type="image/png">
+<link rel="icon" href="/image/logo.jpg" type="image/jpeg">
+<link rel="apple-touch-icon" href="/image/logo.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "WebMakingStudio",
+  "url": "https://web-making-studio.vercel.app/",
+  "logo": "https://web-making-studio.vercel.app/image/logo.jpg"
+}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&amp;family=Inter:wght@400;500;600&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet">
 
 <script src="https://cdn.tailwindcss.com"></script>
@@ -50,16 +66,16 @@
 <!-- ===================== RAIL / NAV ===================== -->
 <header id="rail" class="fixed inset-y-0 left-0 z-50 hidden lg:flex flex-col items-center justify-between w-[92px] border-r border-line py-8">
   <a href="#home" aria-label="WebMakingStudio home">
-    <img class="logo" src="image/logo.jpg" alt="WebMakingStudio" class="w-9 h-9 object-contain">
+    <img class="logo w-14 h-14 object-contain" src="image/logo.jpg" alt="WebMakingStudio">
   </a>
 
   <nav class="flex flex-col items-center gap-8 text-[11px] tracking-widest font-mono uppercase" id="rail-nav">
-    <a href="#home" class="rail-link" data-label="Home">01</a>
-    <a href="#services" class="rail-link" data-label="Services">02</a>
-    <a href="#work" class="rail-link" data-label="Work">03</a>
-    <a href="#about" class="rail-link" data-label="About">04</a>
-    <a href="#pricing" class="rail-link" data-label="Pricing">05</a>
-    <a href="#contact" class="rail-link" data-label="Contact">06</a>
+    <a href="#home" class="rail-link" data-label="Home" aria-label="Home">01</a>
+    <a href="#services" class="rail-link" data-label="Services" aria-label="Website development services">02</a>
+    <a href="#work" class="rail-link" data-label="Portfolio" aria-label="Portfolio">03</a>
+    <a href="#about" class="rail-link" data-label="About" aria-label="About WebMakingStudio">04</a>
+    <a href="#pricing" class="rail-link" data-label="Pricing" aria-label="Pricing">05</a>
+    <a href="#contact" class="rail-link" data-label="Contact" aria-label="Contact WebMakingStudio">06</a>
   </nav>
 
   <div class="flex flex-col items-center gap-4 text-lg text-sand">
@@ -71,7 +87,7 @@
 <!-- ===================== MOBILE TOP BAR ===================== -->
 <header id="mobile-bar" class="lg:hidden fixed top-0 inset-x-0 z-50 flex items-center justify-between px-5 h-[70px] border-b border-line bg-ink/90 backdrop-blur">
   <a href="#home" class="flex items-center gap-2">
-    <img src="image/logo.jpg" alt="WebMakingStudio" class="w-12 h-12 object-contain">
+    <img src="image/logo.jpg" alt="WebMakingStudio" class="w-14 h-14 object-contain">
     <!-- <span class="font-serif text-base">WebMakingStudio</span> -->
   </a>
   <button id="hamburger" class="text-2xl w-10 h-10 flex items-center justify-center" aria-label="Toggle menu" aria-expanded="false">
@@ -97,33 +113,29 @@
 <section id="home" class="relative pt-[110px] lg:pt-24 pb-20 px-6 md:px-14 min-h-screen flex flex-col justify-center overflow-hidden">
 
   <div class="hero-tile hero-anim hidden md:block" aria-hidden="true">
-    <img src="https://images.unsplash.com/photo-1613909207039-6b173b755cc1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YWdlbmN5fGVufDB8fDB8fHww" alt="" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1613909207039-6b173b755cc1?w=900&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YWdlbmN5fGVufDB8fDB8fHww" alt="">
     <span>Est. process — code &amp; craft</span>
   </div>
 
   <p class="hero-anim font-mono text-xs tracking-[0.25em] uppercase text-mint mb-8">Web Development &amp; Design Studio</p>
 
   <h1 class="hero-anim font-serif font-normal leading-[0.95] text-[13vw] lg:text-[7.2vw] max-w-[1200px]">
-    Your idea.<br>
-    Our code.<br>
-    <span class="italic text-mint">Powerful results.</span>
+    Website<br>
+    development<br>
+    <span class="italic text-mint">for businesses.</span>
   </h1>
 
   <div class="hero-anim mt-12 flex flex-col md:flex-row md:items-end md:justify-between gap-8 border-t border-line pt-8">
     <p class="text-lg text-bone/65 max-w-md leading-relaxed">
-        We provide professional website development for businesses,
-  startups and growing brands, including business websites,
-  e-commerce stores, landing pages and custom web applications.
+      WebMakingStudio designs and develops responsive websites for businesses, startups and personal brands—from business and e-commerce websites to landing pages and custom web applications.
     </p>
     <div class="flex flex-wrap gap-4">
-      <a href="#contact" class="btn-solid">Start Your Project</a>
+      <a href="#contact" class="btn-solid">Get a Website Quote</a>
       <a href="#work" class="btn-outline">View Our Work</a>
     </div>
   </div>
 
-  <p class="hero-anim font-mono text-xs tracking-widest uppercase text-sand mt-10">
-    10+ Projects Delivered — Remote — Custom Development
-  </p>
+  <p class="hero-anim font-mono text-xs tracking-widest uppercase text-sand mt-10">Business websites — E-commerce — Custom development</p>
 </section>
 
 <!-- marquee -->
@@ -134,19 +146,19 @@
   </div>
 </div>
 
-<!-- ===================== STATS (bento) ===================== -->
-<section class="px-6 md:px-14 py-20">
+<!-- ===================== STUDIO APPROACH (bento) ===================== -->
+<section class="px-6 md:px-14 py-20" aria-label="Studio approach">
   <div class="grid md:grid-cols-3 gap-4">
     <div class="bento-card bento-image md:row-span-2 flex flex-col justify-between">
-      <img src="https://images.unsplash.com/photo-1603201667141-5a2d4c673378?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWdlbmN5fGVufDB8fDB8fHww" alt="" class="bento-bg" loading="lazy" aria-hidden="true">
-      <p class="font-mono text-xs uppercase tracking-widest text-sand relative">Track record</p>
-      <p class="font-serif text-[5.5rem] leading-none mt-6 text-mint relative"><span class="stat-num" data-target="10">0</span>+</p>
-      <p class="text-bone/60 mt-2 relative">Projects completed for businesses, creators and startups.</p>
+      <img src="https://images.unsplash.com/photo-1603201667141-5a2d4c673378?w=900&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWdlbmN5fGVufDB8fDB8fHww" alt="" class="bento-bg" loading="lazy" aria-hidden="true">
+      <p class="font-mono text-xs uppercase tracking-widest text-sand relative">Project types</p>
+      <p class="font-serif text-5xl md:text-[5.5rem] leading-none mt-6 text-mint relative">Websites</p>
+      <p class="text-bone/60 mt-2 relative">Business, portfolio and e-commerce website development.</p>
     </div>
     <div class="bento-card">
-      <p class="font-mono text-xs uppercase tracking-widest text-sand">Build standard</p>
-      <p class="font-serif text-5xl mt-4"><span class="stat-num" data-target="100">0</span>%</p>
-      <p class="text-bone/60 mt-2 text-sm">Custom-built websites, no templates.</p>
+      <p class="font-mono text-xs uppercase tracking-widest text-sand">Build approach</p>
+      <p class="font-serif text-5xl mt-4">Custom</p>
+      <p class="text-bone/60 mt-2 text-sm">Scope and features shaped around your project.</p>
     </div>
     <div class="bento-card">
       <p class="font-mono text-xs uppercase tracking-widest text-sand">Every device</p>
@@ -163,15 +175,15 @@
 <!-- ===================== SERVICES (list) ===================== -->
 <section id="services" class="px-6 md:px-14 py-24 border-t border-line">
   <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
-    <h2 class="font-serif text-5xl md:text-6xl">What We Build</h2>
-    <p class="text-bone/55 max-w-sm text-lg">From simple landing pages to complete business platforms, we build websites around your goals.</p>
+    <h2 class="font-serif text-5xl md:text-6xl">Website Development Services</h2>
+    <p class="text-bone/55 max-w-sm text-lg">Choose a focused landing page, a business website or a custom web application shaped around your requirements.</p>
   </div>
 
   <div id="services-list">
     <div class="service-row">
       <span class="service-index">01</span>
-      <h3>Landing Pages</h3>
-      <p>Focused single-page sites built to convert visitors into leads.</p>
+      <h3>Landing Page Development</h3>
+      <p>Focused single-page websites that present a product or service and invite enquiries.</p>
       <i class="ri-arrow-right-up-line"></i>
     </div>
     <div class="service-row">
@@ -182,26 +194,26 @@
     </div>
     <div class="service-row">
       <span class="service-index">03</span>
-      <h3>Business Websites</h3>
-      <p>Multi-page sites that establish credibility and generate enquiries.</p>
+      <h3>Business Website Development</h3>
+      <p>Business websites that explain your services, introduce your team and make it easy to get in touch.</p>
       <i class="ri-arrow-right-up-line"></i>
     </div>
     <div class="service-row">
       <span class="service-index">04</span>
-      <h3>E-commerce Websites</h3>
+      <h3>E-commerce Website Development</h3>
       <p>Online stores with product catalogues, cart and checkout flows.</p>
       <i class="ri-arrow-right-up-line"></i>
     </div>
     <div class="service-row">
       <span class="service-index">05</span>
       <h3>Custom Web Applications</h3>
-      <p>Tailored web apps and dashboards built around your exact workflow.</p>
+      <p>Web applications, dashboards and Django backends scoped to your project requirements.</p>
       <i class="ri-arrow-right-up-line"></i>
     </div>
     <div class="service-row">
       <span class="service-index">06</span>
       <h3>Website Redesign</h3>
-      <p>Modernising outdated sites without losing what already works.</p>
+      <p>Refresh an existing website’s design and structure while keeping useful content and functionality.</p>
       <i class="ri-arrow-right-up-line"></i>
     </div>
     <div class="service-row">
@@ -213,7 +225,7 @@
     <div class="service-row">
       <span class="service-index">08</span>
       <h3>Website Maintenance</h3>
-      <p>Ongoing updates, fixes and support after your site goes live.</p>
+      <p>Updates, fixes and ongoing support for your website after launch.</p>
       <i class="ri-arrow-right-up-line"></i>
     </div>
   </div>
@@ -226,7 +238,7 @@
       Your website is your digital first impression<span class="text-mint">.</span>
     </blockquote>
     <div class="rounded-[2px] overflow-hidden border border-line">
-      <img src="https://images.unsplash.com/photo-1603202662747-00e33e7d1468?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFnZW5jeXxlbnwwfHwwfHx8MA%3D%3D" alt="Abstract circuit board texture" class="w-full h-64 object-cover opacity-70" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1603202662747-00e33e7d1468?w=900&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFnZW5jeXxlbnwwfHwwfHx8MA%3D%3D" alt="" class="w-full h-64 object-cover opacity-70" loading="lazy">
     </div>
   </div>
 
@@ -242,99 +254,98 @@
 <!-- ===================== WORK (horizontal scroll) ===================== -->
 <section id="work" class="py-24 border-t border-line">
   <div class="px-6 md:px-14 flex md:items-end md:justify-between gap-6 mb-12">
-    <h2 class="font-serif text-5xl md:text-6xl">Selected Work</h2>
-    <p class="hidden md:block font-mono text-xs uppercase tracking-widest text-sand" id="work-counter">01 / 06</p>
+    <h2 class="font-serif text-5xl md:text-6xl">Website Portfolio</h2>
+    <p class="hidden md:block font-mono text-xs uppercase tracking-widest text-sand" id="work-counter">01 / 11</p>
   </div>
 
   <div class="work-scroll pl-6 md:pl-14 pr-6" id="work-scroll">
     <article class="work-slide" data-cat="business">
-      <div class="work-preview biz"></div>
+      <img class="work-preview" src="image/prachi.jpeg" alt="Website preview for Dr. Prachi Tiwari" width="1280" height="596" loading="lazy" decoding="async">
       <div class="work-meta">
-        <span>Dr. Prachi Tiwari</span>
-        <h3><a href="http://hnhhomeopathy.in/">See Work</a></h3>
+        <span>Healthcare business website</span>
+        <h3><a href="http://hnhhomeopathy.in/" aria-label="Visit Dr. Prachi Tiwari's website">Visit website</a></h3>
       </div>
     </article>
     <article class="work-slide" data-cat="ecommerce">
-      <div class="work-preview eco"></div>
+      <img class="work-preview" src="image/Screenshot 2026-10-05 at 12.55.07 PM.png" alt="E-commerce website preview" width="960" height="542" loading="lazy" decoding="async">
       <div class="work-meta">
-        <span>E-commerce</span>
-        <h3><a href="https://divinecreation.onrender.com/">See Work</a></h3>
+        <span>E-commerce website</span>
+        <h3><a href="https://divinecreation.onrender.com/" aria-label="Visit the Divine Creation e-commerce website">Visit website</a></h3>
       </div>
     </article>
     <article class="work-slide" data-cat="portfolio">
-      <div class="work-preview port"></div>
+      <img class="work-preview" src="image/mera sai.png" alt="Mera Sai Travels website preview" width="960" height="541" loading="lazy" decoding="async">
       <div class="work-meta">
-        <span>Portfolio Mera Sai Travels</span>
-        <h3><a href="https://merasaitravels.com/">See Work</a></h3>
+        <span>Travel portfolio website</span>
+        <h3><a href="https://merasaitravels.com/" aria-label="Visit the Mera Sai Travels website">Visit website</a></h3>
       </div>
     </article>
     <article class="work-slide" data-cat="landing">
-      <div class="work-preview land"></div>
+      <img class="work-preview" src="image/clinic.png" alt="Saksham Healthcare Clinic website preview" width="960" height="540" loading="lazy" decoding="async">
       <div class="work-meta">
-        <span>Saksham Healthcare Clinic</span>
-        <h3><a href="https://sakshamhealthcareclinic.com/">See Work</a></h3>
+        <span>Healthcare business website</span>
+        <h3><a href="https://sakshamhealthcareclinic.com/" aria-label="Visit the Saksham Healthcare Clinic website">Visit website</a></h3>
       </div>
     </article>
     <article class="work-slide" data-cat="landing">
-      <div class="work-preview land2"></div>
+      <img class="work-preview" src="image/hotel.png" alt="Hindustan Hindu Hotel website preview" width="960" height="541" loading="lazy" decoding="async">
       <div class="work-meta">
-        <span>Hindustan Hindu Hotel</span>
-        <h3><a href="https://hindustan-hindu-hotel.vercel.app/">See Work</a></h3>
+        <span>Hotel business website</span>
+        <h3><a href="https://hindustan-hindu-hotel.vercel.app/" aria-label="Visit the Hindustan Hindu Hotel website">Visit website</a></h3>
       </div>
     </article>
     <article class="work-slide" data-cat="custom">
-      <div class="work-preview cust"></div>
+      <img class="work-preview" src="image/healthtech.png" alt="Aaditya Healthtech Solutions website preview" width="960" height="542" loading="lazy" decoding="async">
       <div class="work-meta">
-        <span>Aaditya Healthtech Solutions</span>
-        <h3><a href="https://aadityahealthtechsolutions.com/">See Work</a></h3>
+        <span>Healthcare web application</span>
+        <h3><a href="https://aadityahealthtechsolutions.com/" aria-label="Visit the Aaditya Healthtech Solutions website">Visit website</a></h3>
       </div>
     </article>
     <article class="work-slide" data-cat="custom">
-      <div class="work-preview cust2"></div>
+      <img class="work-preview" src="image/aacadamy.png" alt="AcademyIndia website preview" width="960" height="541" loading="lazy" decoding="async">
       <div class="work-meta">
-        <span>AcademyIndia</span>
-        <h3><a href="https://academy-india.vercel.app/">See Work</a></h3>
+        <span>Education website</span>
+        <h3><a href="https://academy-india.vercel.app/" aria-label="Visit the AcademyIndia website">Visit website</a></h3>
       </div>
     </article>
     <article class="work-slide" data-cat="custom">
-      <div class="work-preview cust3"></div>
+      <img class="work-preview" src="image/shivla.png" alt="Shivaleela Hotel website preview" width="960" height="541" loading="lazy" decoding="async">
       <div class="work-meta">
-        <span>Shivaleela Hotel</span>
-        <h3><a href="https://shivaleela-hotel.vercel.app/">See Work</a></h3>
+        <span>Hotel business website</span>
+        <h3><a href="https://shivaleela-hotel.vercel.app/" aria-label="Visit the Shivaleela Hotel website">Visit website</a></h3>
       </div>
     </article>
     <article class="work-slide" data-cat="business">
-      <div class="work-preview biz2"></div>
+      <img class="work-preview" src="image/Global care.png" alt="Global Care Hospital website preview" width="960" height="542" loading="lazy" decoding="async">
       <div class="work-meta">
-        <span>Global Care Hospital</span>
-        <h3><a href="https://global-care-hospital.vercel.app/">See Work</a></h3>
+        <span>Healthcare business website</span>
+        <h3><a href="https://global-care-hospital.vercel.app/" aria-label="Visit the Global Care Hospital website">Visit website</a></h3>
       </div>
     </article>
     <article class="work-slide" data-cat="business">
-      <div class="work-preview biz3"></div>
+      <img class="work-preview" src="image/rahul.png" alt="Dr. Rahul Singh website preview" width="960" height="540" loading="lazy" decoding="async">
       <div class="work-meta">
-        <span>Dr. Rahul Singh</span>
-        <h3><a href="https://ramuna-clinic.vercel.app/">See Work</a></h3>
+        <span>Healthcare business website</span>
+        <h3><a href="https://ramuna-clinic.vercel.app/" aria-label="Visit the Dr. Rahul Singh website">Visit website</a></h3>
       </div>
     </article>
     <article class="work-slide" data-cat="business">
-      <div class="work-preview biz4"></div>
+      <img class="work-preview" src="image/Kingston.png" alt="Kingston Wines And Beer website preview" width="960" height="542" loading="lazy" decoding="async">
       <div class="work-meta">
-        <span>Kingston Wines And Beer</span>
-        <h3><a href="https://kingston-eosin.vercel.app/">See Work</a></h3>
+        <span>Business website</span>
+        <h3><a href="https://kingston-eosin.vercel.app/" aria-label="Visit the Kingston Wines And Beer website">Visit website</a></h3>
       </div>
     </article>
   </div>
-  <!-- <p class="px-6 md:px-14 text-xs text-sand mt-6">Project previews are placeholders — swap in real screenshots as work is completed. Scroll sideways to browse.</p> -->
 </section>
 
 <!-- ===================== ABOUT ===================== -->
 <section id="about" class="px-6 md:px-14 py-24 border-t border-line grid lg:grid-cols-2 gap-16 items-center">
   <div>
     <p class="font-mono text-xs tracking-widest uppercase text-mint mb-6">About the studio</p>
-    <h2 class="font-serif text-5xl leading-tight mb-6">Built with purpose.<br>Designed for growth.</h2>
+    <h2 class="font-serif text-5xl leading-tight mb-6">About WebMakingStudio:<br>built with purpose.</h2>
     <p class="text-bone/65 text-lg leading-relaxed max-w-lg">
-      WebMakingStudio is a remote web development studio focused on creating modern, responsive and performance-driven websites for businesses, startups, creators and personal brands.
+      WebMakingStudio is a web development studio creating responsive business websites, e-commerce websites, portfolio sites and custom web applications for businesses, startups, creators and personal brands.
     </p>
     <div class="grid grid-cols-2 gap-x-8 gap-y-3 mt-10 text-sm">
       <div class="focus-item">Modern design</div>
@@ -348,9 +359,9 @@
   </div>
   <div class="relative">
     <div class="about-portrait">
-      <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D" alt="Illustration of a developer working on a laptop" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D" alt="" loading="lazy">
     </div>
-    <p class="font-serif text-xl italic mt-6 text-bone/70">"10+ projects, built one relationship at a time."</p>
+    <p class="font-serif text-xl italic mt-6 text-bone/70">Thoughtful websites, built around your goals.</p>
   </div>
 </section>
 
@@ -385,7 +396,7 @@
 <!-- ===================== PRICING (table) ===================== -->
 <section id="pricing" class="px-6 md:px-14 py-24 border-t border-line">
   <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
-    <h2 class="font-serif text-5xl md:text-6xl">Simple Starting Prices</h2>
+    <h2 class="font-serif text-5xl md:text-6xl">Website Project Prices</h2>
     <p class="text-bone/55 max-w-sm text-lg">These are starting ranges, not fixed quotes.</p>
   </div>
 
@@ -434,13 +445,7 @@
     <blockquote id="testimonial-quote" class="font-serif text-3xl md:text-4xl leading-snug min-h-[9rem]">
       "Great experience working with WebMakingStudio. The website was clean, responsive and delivered with attention to detail."
     </blockquote>
-    <div class="flex lg:flex-col gap-3 flex-wrap" id="testimonial-tabs">
-      <button class="t-tab active" data-quote="Great experience working with WebMakingStudio. The website was clean, responsive and delivered with attention to detail.">Gurpinder Singh</button>
-      <button class="t-tab" data-quote="“WebMakingStudio understood exactly what we needed and delivered a clean, modern website that looks great on both mobile and desktop. The whole process was smooth and professional.” Placeholder testimonial text for Mansi — replace with her exact words.">Mansi</button>
-      <button class="t-tab" data-quote="“Really impressed with the website redesign. The new layout feels much more professional, loads smoothly, and makes it easier for customers to understand our services.” Placeholder testimonial text for Kashish — replace with her exact words.">sajan</button>
-      <button class="t-tab" data-quote="“The team was responsive, creative, and easy to work with. They turned our basic idea into a polished website that represents our business much better.” Placeholder testimonial text for Taania — replace with her exact words.">Tania</button>
-      <button class="t-tab" data-quote="“A clean, modern website with excellent attention to detail. Exactly the professional look we were looking for.” Placeholder testimonial text for Amrit — replace with his exact words.">Amrit</button>
-    </div>
+    <p class="t-tab active">Gurpinder Singh</p>
   </div>
 </section>
 
@@ -450,8 +455,8 @@
 
   <div class="grid md:grid-cols-2 gap-x-14" id="faq-list">
     <div class="faq-item">
-      <button class="faq-question" aria-expanded="false"><span>How much does a website cost?</span><i class="ri-add-line"></i></button>
-      <div class="faq-answer"><p>It depends on the type of site and features needed — see the Pricing section above for starting ranges.</p></div>
+      <button class="faq-question" aria-expanded="false"><span>How much does website development cost?</span><i class="ri-add-line"></i></button>
+      <div class="faq-answer"><p>Cost depends on the website type and features. The pricing section lists starting ranges for landing pages and portfolio websites; other projects are quoted after discussing requirements.</p></div>
     </div>
     <div class="faq-item">
       <button class="faq-question" aria-expanded="false"><span>How long does development take?</span><i class="ri-add-line"></i></button>
@@ -474,8 +479,8 @@
       <div class="faq-answer"><p>Yes, including product catalogues, shopping cart and checkout functionality.</p></div>
     </div>
     <div class="faq-item">
-      <button class="faq-question" aria-expanded="false"><span>Can I request custom features?</span><i class="ri-add-line"></i></button>
-      <div class="faq-answer"><p>Yes, custom functionality can be scoped and built around your specific requirements.</p></div>
+      <button class="faq-question" aria-expanded="false"><span>Can you build a custom Django web application?</span><i class="ri-add-line"></i></button>
+      <div class="faq-answer"><p>Custom web applications, dashboards and Django backends can be discussed and scoped around your project requirements.</p></div>
     </div>
     <div class="faq-item">
       <button class="faq-question" aria-expanded="false"><span>Do you work remotely?</span><i class="ri-add-line"></i></button>
@@ -487,8 +492,8 @@
 <!-- ===================== CONTACT ===================== -->
 <section id="contact" class="px-6 md:px-14 py-24 border-t border-line grid lg:grid-cols-[1fr_0.9fr] gap-16">
   <div>
-    <h2 class="font-serif text-5xl md:text-6xl leading-tight">Have an idea?<br><span class="text-mint italic">Let's build it.</span></h2>
-    <p class="mt-6 text-bone/65 text-lg max-w-md">Tell us what you're building and we'll discuss the right web solution for your project.</p>
+    <h2 class="font-serif text-5xl md:text-6xl leading-tight">Need a website?<br><span class="text-mint italic">Get a quote.</span></h2>
+    <p class="mt-6 text-bone/65 text-lg max-w-md">Share your requirements for a business website, e-commerce store, landing page or custom web application, and we’ll discuss a suitable approach.</p>
     <div class="mt-10 space-y-3">
       <a href="mailto:webmakingstudio05@gmail.com" class="flex items-center gap-3 hover:text-mint transition-colors"><i class="ri-mail-line text-mint"></i>webmakingstudio05@gmail.com</a>
       <p class="flex items-center gap-3"><i class="ri-map-pin-line text-mint"></i>Remote — India / Worldwide</p>
@@ -520,7 +525,7 @@
       <label for="details" class="form-label">Project Details</label>
       <textarea id="details" name="details" rows="4" class="form-input resize-none" placeholder="Tell us a bit about your project..."></textarea>
     </div>
-    <button type="submit" class="btn-solid w-full justify-center">Start Your Project</button>
+    <button type="submit" class="btn-solid w-full justify-center">Request a Website Quote</button>
     <p id="form-status" class="text-sm text-sand" role="status"></p>
   </form>
 </section>

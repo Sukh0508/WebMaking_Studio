@@ -50,6 +50,7 @@ const workCounter = document.getElementById("work-counter");
 const workSlides = document.querySelectorAll(".work-slide");
 
 if (workScroll && workCounter) {
+  workCounter.textContent = `01 / ${String(workSlides.length).padStart(2, "0")}`;
   const slideObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -64,55 +65,17 @@ if (workScroll && workCounter) {
   workSlides.forEach((s) => slideObserver.observe(s));
 }
 
-/* ===================== Testimonial tabs ===================== */
-const tTabs = document.querySelectorAll(".t-tab");
-const tQuote = document.getElementById("testimonial-quote");
-
-tTabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    tTabs.forEach((t) => t.classList.remove("active"));
-    tab.classList.add("active");
-    tQuote.textContent = `"${tab.dataset.quote}"`;
-  });
-});
-
-/* ===================== Stats counter ===================== */
-const statNums = document.querySelectorAll(".stat-num");
-const statsObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      const el = entry.target;
-      const target = parseInt(el.dataset.target, 10);
-      const duration = 900;
-      const start = performance.now();
-      function tick(now) {
-        const progress = Math.min((now - start) / duration, 1);
-        el.textContent = Math.floor(progress * target);
-        if (progress < 1) requestAnimationFrame(tick);
-        else el.textContent = target;
-      }
-      requestAnimationFrame(tick);
-      statsObserver.unobserve(el);
-    });
-  },
-  { threshold: 0.5 }
-);
-statNums.forEach((el) => statsObserver.observe(el));
-
 /* ===================== Contact form ===================== */
 const contactForm = document.getElementById("contact-form");
 const formStatus = document.getElementById("form-status");
 
 contactForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  const name = contactForm.name.value.trim();
-  const email = contactForm.email.value.trim();
+  if (!contactForm.reportValidity()) return;
 
-  if (!name || !email) {
-    formStatus.textContent = "Please fill in your name and email.";
-    return;
-  }
+  const formData = new FormData(contactForm);
+  const name = String(formData.get("name") || "").trim();
+  const email = String(formData.get("email") || "").trim();
 
   // No backend is connected yet, so we open the user's email client
   // with the details pre-filled. Replace this with a real form
@@ -121,10 +84,10 @@ contactForm.addEventListener("submit", (e) => {
   const body = encodeURIComponent(
     `Name: ${name}\n` +
     `Email: ${email}\n` +
-    `Phone: ${contactForm.phone.value.trim()}\n` +
-    `Project Type: ${contactForm.project_type.value}\n` +
-    `Budget: ${contactForm.budget.value}\n\n` +
-    `Details:\n${contactForm.details.value.trim()}`
+    `Phone: ${String(formData.get("phone") || "").trim()}\n` +
+    `Project Type: ${String(formData.get("project_type") || "")}\n` +
+    `Budget: ${String(formData.get("budget") || "")}\n\n` +
+    `Details:\n${String(formData.get("details") || "").trim()}`
   );
 
   window.location.href = `mailto:webmakingstudio05@gmail.com?subject=${subject}&body=${body}`;
