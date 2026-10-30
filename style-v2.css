@@ -282,6 +282,40 @@ select.form-input option { background: #070706; }
     scroll-behavior: auto !important;
   }
 }
-.logo{
-  /* border: 2px solid green; */
+
+/* ============ Prevent CLS: reserve space for images ============ */
+.work-slide picture { display: block; }
+.work-preview {
+  background: #0F110F;
+}
+.bento-bg {
+  background: #0F110F;
+}
+
+/* ============ Focus visible improvements (accessibility) ============ */
+a:focus-visible,
+button:focus-visible,
+select:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #21D99A;
+  outline-offset: 3px;
+}
+
+/* ============ Skip to content link (accessibility) ============ */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 6px;
+  z-index: 100;
+  background: #21D99A;
+  color: #070706;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 2px;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 6px;
 }

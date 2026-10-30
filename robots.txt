@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+# Disallow access to internal/system files
+Disallow: /.git/
+
 Sitemap: https://web-making-studio.vercel.app/sitemap.xml

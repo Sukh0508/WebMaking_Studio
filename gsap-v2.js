@@ -22,7 +22,6 @@ if (!prefersReducedMotion) {
     "#about h2, #about p, .focus-item, .about-portrait",
     ".timeline-step",
     ".price-row:not(.header)",
-    "#testimonials blockquote, #testimonial-tabs .t-tab",
     "#faq-list .faq-item",
     "#contact h2, #contact p, #contact-form",
   ];
